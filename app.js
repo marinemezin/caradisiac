@@ -1,3 +1,7 @@
+//Très bien pour comprendre comment tester la chose
+//https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
+//Très bien pour coder
 //https://qbox.io/blog/integrating-elasticsearch-into-node-js-application
 //https://www.compose.com/articles/getting-started-with-elasticsearch-and-node/
 //https://medium.freecodecamp.org/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2
