@@ -5,7 +5,24 @@ var connection = require('../../docs/js/connection');
 var client = connection.client;
 
 exports.addDocument = function (req, res) {
-    var cars = "";
+    res.json({ message: "populate yes" });
+    /*const { getBrands } = require('node-car-api');
+
+    async function print() {
+        const brands = await getBrands();
+
+        console.log(brands);
+    }
+    print();*/
+    /*const {getModels} = require('node-car-api');
+
+    async function print () {   
+        const models = await getModels('PEUGEOT');
+
+        console.log(models);
+    }
+    print();*/
+    /*var cars = "";
     //cars contiendra le document json
     var body = [];
     for (var i = 0; i < cars.length; i++) {
@@ -25,11 +42,12 @@ exports.addDocument = function (req, res) {
         else {
             console.log(response);
         }
-    });
+    });*/
 }
 
-exports.searchInfo = function (req, res, indexName, docType, payload) {
-    elasticClient.search({
+exports.searchInfo = function (req, res/*, indexName, docType, payload*/) {
+    res.json({message:"search info yes"});
+    /*client.search({
         index: indexName,
         type: docType,
         body: payload
@@ -38,8 +56,8 @@ exports.searchInfo = function (req, res, indexName, docType, payload) {
         return res.json(resp)
     }, function (err) {
         console.log(err.message);
-        return res.json(err.message)
-    });
+        return res.json(err.message)*/
+    }/*)*/;
 
 /*
 exports.addInfos = function(req, res) {

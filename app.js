@@ -6,18 +6,15 @@
 //https://automationrhapsody.com/build-rest-api-express-node-js-run-docker/
 
 var express = require('express');
+var app = express()
 var bodyParser = require('body-parser');
 
-//Models
-var cars = require('./app/models/carModel');
-
-const app = express()
-//const port = 9292;
-
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var routes = require('./api/routes/node_routes');
+var port = 9292;
+
+var routes = require('./app/routes/node_routes');
 routes(app);
 
 app.listen(port, () => {

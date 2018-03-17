@@ -3,7 +3,7 @@
 //Create a new index
 //A new index will be created to store our documents 
 //Otherwise an error will be thrown
-client.indices.create({
+/*client.indices.create({
     index: 'populate'
 }, function (err, resp, status) {
     if (err) {
@@ -11,10 +11,10 @@ client.indices.create({
     } else {
         console.log("create", resp);
     }
-});
+});*/
 
 //Adding documents to an index
-client.index({
+/*client.index({
     index: 'populate',
     id: '1',
     type: 'posts',
@@ -23,4 +23,4 @@ client.index({
     }
 }, function (err, resp, status) {
     console.log(resp);
-});
+});*/
