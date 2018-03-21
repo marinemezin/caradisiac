@@ -7,5 +7,5 @@ module.exports = function (app) {
 
     //Retourne les données récupérées depuis ElasticSearch
     app.route('/suv')
-        .get(library.searchInfo);
+        .post(library.searchInfo);
 };

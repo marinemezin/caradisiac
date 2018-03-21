@@ -9,6 +9,6 @@
     "\\docs",
     "\\docs\\js"
   ],
-  "SelectedNode": "\\app\\routes\\node_routes.js",
+  "SelectedNode": "\\app\\handlers\\errorHandler.js",
   "PreviewInSolutionExplorer": false
 }
