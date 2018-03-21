@@ -371,3 +371,7 @@ exports.addInfos = function(req, res) {
     errorHandler.error(res, err.message, "Failed to create new album.");
   });
 };*/
+
+//client.index.create
+//Si il existe on ne le créé pas
+//Ensuite c'est mieux de bulk un à un plutôt que tout d'un coup mon kiki
