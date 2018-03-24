@@ -6,6 +6,14 @@ module.exports = function (app) {
         .post(library.addDocument);
 
     //Retourne les données récupérées depuis ElasticSearch
-    app.route('/suv')
-        .post(library.searchInfo);
+    app.route('/cars')
+        .get(library.searchInfo);
+
+    //Enregistre toutes les marques dans un fichier json
+    app.route('/brands')
+        .post(library.brandFile);
+
+    //enregistre tous les modèles dans un fichier json
+    app.route('/models')
+        .post(library.modelJson);
 };
