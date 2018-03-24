@@ -1,4 +1,3 @@
-//Utils
 var errorHandler = require('../handlers/errorHandler');
 
 var elasticsearch = require('elasticsearch');
